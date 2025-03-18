@@ -54,3 +54,4 @@ wtpwebapps/
 *.env
 *.bak
 *.swp
+/.metadata/

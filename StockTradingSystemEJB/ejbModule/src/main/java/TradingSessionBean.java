@@ -21,7 +21,7 @@ public class TradingSessionBean {
     }
     
     private List<String> watchList = new ArrayList<>();
-    
+    private
     
 
 }
