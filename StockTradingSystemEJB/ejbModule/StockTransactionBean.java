@@ -1,5 +1,3 @@
-package com;
-
 import jakarta.ejb.EJB;
 import jakarta.ejb.LocalBean;
 import jakarta.ejb.Stateless;

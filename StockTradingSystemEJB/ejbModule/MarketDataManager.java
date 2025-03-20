@@ -1,5 +1,3 @@
-package com;
-
 import jakarta.ejb.*;
 import jakarta.annotation.PostConstruct;
 
