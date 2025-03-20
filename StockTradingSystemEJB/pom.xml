@@ -9,8 +9,12 @@
         <dependency>
             <groupId>jakarta.ejb</groupId>
             <artifactId>jakarta.ejb-api</artifactId>
-            <version>4.0.1</version>
         </dependency>
+        <dependency>
+                <groupId>jakarta.annotation</groupId>
+                <artifactId>jakarta.annotation-api</artifactId>
+                <version>3.0.0</version>
+            </dependency>
     </dependencies>
 
     <build>
@@ -20,9 +24,18 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
                 <configuration>
-                    <release>23</release>
+                    <release>21</release>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+    <dependencyManagement>
+    	<dependencies>
+    		<dependency>
+    			<groupId>jakarta.ejb</groupId>
+    			<artifactId>jakarta.ejb-api</artifactId>
+    			<version>4.0.1</version>
+    		</dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

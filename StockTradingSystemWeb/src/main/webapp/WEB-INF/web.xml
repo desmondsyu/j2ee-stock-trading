@@ -5,10 +5,51 @@
          version="3.1">
     <servlet>
         <servlet-name>StockServlet</servlet-name>
-        <servlet-class>com.stocktrading.servlet.StockServlet</servlet-class>
+        <servlet-class>com.stocktrading.StockServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>StockServlet</servlet-name>
         <url-pattern>/StockServlet</url-pattern>
     </servlet-mapping>
+      <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.stocktrading.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+       <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>com.stocktrading.DashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/DashboardServlet</url-pattern>
+    </servlet-mapping>
+       <servlet>
+        <servlet-name>TradeServlet</servlet-name>
+        <servlet-class>com.stocktrading.TradeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TradeServlet</servlet-name>
+        <url-pattern>/TradeServlet</url-pattern>
+    </servlet-mapping>
+         <servlet>
+        <servlet-name>HistoryServlet</servlet-name>
+        <servlet-class>com.stocktrading.HistoryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HistoryServlet</servlet-name>
+        <url-pattern>/HistoryServlet</url-pattern>
+    </servlet-mapping>
+          <servlet>
+        <servlet-name>NotificationServlet</servlet-name>
+        <servlet-class>com.stocktrading.NotificationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>NotificationServlet</servlet-name>
+        <url-pattern>/NotificationServlet</url-pattern>
+    </servlet-mapping>
+    
 </web-app>
