@@ -25,8 +25,9 @@ public class StockServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		response.getWriter().append("Served at: ").append(request.getContextPath());
+		//test
+		String tradeResult = stockTransactionBean.executeTrade("AAPL", 10, "BUY");
+		response.getWriter().println("Trade Executed: " + tradeResult);
 	}
 
 	/**

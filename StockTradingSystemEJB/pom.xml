@@ -1,24 +1,31 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
     <modelVersion>4.0.0</modelVersion>
     <groupId>StockTradingSystemEJB</groupId>
     <artifactId>StockTradingSystemEJB</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>ejb</packaging>
 
     <dependencies>
+
         <dependency>
             <groupId>jakarta.ejb</groupId>
             <artifactId>jakarta.ejb-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
         </dependency>
+
         <dependency>
-                <groupId>jakarta.annotation</groupId>
-                <artifactId>jakarta.annotation-api</artifactId>
-                <version>3.0.0</version>
-            </dependency>
+            <groupId>jakarta.platform</groupId>
+            <artifactId>jakarta.jakartaee-api</artifactId>
+            <version>10.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+
     </dependencies>
 
     <build>
-        <sourceDirectory>ejbModule</sourceDirectory>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -29,13 +36,4 @@
             </plugin>
         </plugins>
     </build>
-    <dependencyManagement>
-    	<dependencies>
-    		<dependency>
-    			<groupId>jakarta.ejb</groupId>
-    			<artifactId>jakarta.ejb-api</artifactId>
-    			<version>4.0.1</version>
-    		</dependency>
-        </dependencies>
-    </dependencyManagement>
 </project>
