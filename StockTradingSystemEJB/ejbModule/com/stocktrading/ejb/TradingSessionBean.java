@@ -1,23 +1,13 @@
 package com.stocktrading.ejb;
+
 import java.util.ArrayList;
 import java.util.List;
-
-import jakarta.ejb.LocalBean;
+import jakarta.ejb.Local;
 import jakarta.ejb.Stateful;
 
-/**
- * Session Bean implementation class TradingSessionBean
- */
 @Stateful
-@LocalBean
-public class TradingSessionBean {
-
-	/**
-	 * Default constructor.
-	 */
-	public TradingSessionBean() {
-		// TODO Auto-generated constructor stub
-	}
+@Local(TradingSession.class)  // ✅ Ensure the EJB is registered
+public class TradingSessionBean implements TradingSession {
 
 	private List<String> watchList = new ArrayList<>();
 	private List<String> orderHistory = new ArrayList<>();
@@ -35,7 +25,6 @@ public class TradingSessionBean {
 	}
 
 	public List<String> getWatchList() {
-		// TODO Auto-generated method stub
 		return watchList;
 	}
 }

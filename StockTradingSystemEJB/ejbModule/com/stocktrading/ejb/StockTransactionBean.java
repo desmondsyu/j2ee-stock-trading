@@ -37,7 +37,7 @@ public class StockTransactionBean {
 		String tradeMessage = "Trade executed: " + orderType + " " + quantity + " " + stockSymbol + " at $" + price;
 
 		// ✅ Send trade message to the JMS queue
-		jmsContext.createProducer().send(tradeQueue, tradeMessage);
+//		jmsContext.createProducer().send(tradeQueue, tradeMessage);
 
 		return tradeMessage;
 	}

@@ -19,6 +19,8 @@ public class TradeNotificationBean implements MessageListener {
 			if (message instanceof TextMessage) {
 				TextMessage textMessage = (TextMessage) message;
 				System.out.println("Trade Notification Received: " + textMessage.getText());
+			} else {
+				System.out.println("Received non-text message.");
 			}
 		} catch (JMSException e) {
 			e.printStackTrace();
